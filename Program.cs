@@ -1,0 +1,2 @@
+﻿Banco.CriarBanco();
+Banco.CriarTabelaAluno();

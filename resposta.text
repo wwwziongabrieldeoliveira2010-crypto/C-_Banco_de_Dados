@@ -1,0 +1,31 @@
+4-1| Como o C# realiza uma conexão com um banco de dados?
+. No codigo a conexão acontece em duas etapas 1° conecta so no servidor do MySQL pra poder criar o banco,
+depois conecta especificamente no banco IMC ja criado, pra poder criar tabelas e trabalhar com os dados
+
+
+4-2| Bilioteca Usada? 
+. A gente usa o MySQL.Data.MySQLClient que da pra observar la no using na primeira linha do codigo 
+
+
+4-3| Como foi adicionada? 
+. Foi adicionado via NuGet(que é um gerenciador de pacotes do .net tipo uma loja)
+que a gente usa um dotnet add package MySQL.Data, o que permite usar as classes MySQLConnection e o MySQLCommand
+
+
+4-4| O que é a string de conexão no seu codigo? 
+. a gente usou a variavel string em duas ocasioes la qaundo a gente faz a conexao com o servidor 
+e quando a gente faz conexão com o banco 
+demonstração : private static string conexaoServidor =
+    "server=localhost;user=root;password=Senac2026;";
+
+private static string conexaoBanco =
+    "server=localhost;database=ec;user=root;password=Senac2026;";
+
+4-5 O que aparece nelas? 
+. Aparece o server=localhost que é o endereço do servidor 
+. user = root que no caso é o usuario 
+. password = Senac2026 é a senha para entrar no banco
+. e por ultimo o database=IMC nome do banco
+----------------------------------------------------------------------------------------------------------
+
+

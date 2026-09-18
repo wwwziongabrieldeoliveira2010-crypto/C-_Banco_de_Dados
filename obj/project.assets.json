@@ -551,19 +551,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\samuel61459576\\.nuget\\packages\\": {}
+    "C:\\Users\\emanoel61511056\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samuel61459576\\Documents\\GitHub\\C-_Banco_de_Dados\\C-_Banco_de_Dados.csproj",
+      "projectUniqueName": "C:\\Users\\emanoel61511056\\Documents\\GitHub\\C-_Banco_de_Dados\\C-_Banco_de_Dados.csproj",
       "projectName": "C-_Banco_de_Dados",
-      "projectPath": "C:\\Users\\samuel61459576\\Documents\\GitHub\\C-_Banco_de_Dados\\C-_Banco_de_Dados.csproj",
-      "packagesPath": "C:\\Users\\samuel61459576\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samuel61459576\\Documents\\GitHub\\C-_Banco_de_Dados\\obj\\",
+      "projectPath": "C:\\Users\\emanoel61511056\\Documents\\GitHub\\C-_Banco_de_Dados\\C-_Banco_de_Dados.csproj",
+      "packagesPath": "C:\\Users\\emanoel61511056\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emanoel61511056\\Documents\\GitHub\\C-_Banco_de_Dados\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\samuel61459576\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\emanoel61511056\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("C-_Banco_de_Dados")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bd4f33623a7dbd92916bf6614b0aa7aca518822")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41440d86fbe9038cbeea7a9cf5c7490f2a220dc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("C-_Banco_de_Dados")]
 [assembly: System.Reflection.AssemblyTitleAttribute("C-_Banco_de_Dados")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

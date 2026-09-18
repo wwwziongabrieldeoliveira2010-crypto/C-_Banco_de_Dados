@@ -35,3 +35,40 @@ C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\refin
 C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.pdb
 C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.genruntimeconfig.cache
 C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\ref\C-_Banco_de_Dados.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\C-_Banco_de_Dados.exe
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\C-_Banco_de_Dados.deps.json
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\C-_Banco_de_Dados.runtimeconfig.json
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\C-_Banco_de_Dados.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\C-_Banco_de_Dados.pdb
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\BouncyCastle.Cryptography.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\Google.Protobuf.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\K4os.Compression.LZ4.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\K4os.Hash.xxHash.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\MySql.Data.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\System.Diagnostics.EventLog.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\System.Security.Permissions.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\System.Windows.Extensions.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\ZstdSharp.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Diagnostics.EventLog.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Windows.Extensions.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.csproj.AssemblyReference.cache
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.AssemblyInfoInputs.cache
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.AssemblyInfo.cs
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.csproj.CoreCompileInputs.cache
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.sourcelink.json
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco.F0CE3123.Up2Date
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\refint\C-_Banco_de_Dados.dll
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.pdb
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\C-_Banco_de_Dados.genruntimeconfig.cache
+C:\Users\PC Meninos\Documents\GitHub\C-_Banco_de_Dados\obj\Debug\net10.0\ref\C-_Banco_de_Dados.dll

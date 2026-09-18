@@ -4,7 +4,7 @@ public class Banco
 {
     // Conexão com o servidor MySQL
     private static string conexaoServidor =
-        "server=localhost;user=root;password=Senac2026.;";
+        "server=localhost;user=root;password=Senac2026;";
 
     // Conexão com o banco depois que ele for criado
 
@@ -24,7 +24,7 @@ public class Banco
     }
 
     private static string conexaoBanco =
-        "server=localhost;database=IMC;user=root;password=Senac2026.;";
+        "server=localhost;database=IMC;user=root;password=Senac2026;";
 
     public static void CriarTabelaPessoa()
     {

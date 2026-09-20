@@ -4,7 +4,7 @@ public class Banco
 {
     // Conexão com o servidor MySQL
     private static string conexaoServidor =
-        "server=localhost;user=root;password=Senac2026;";
+        "server=localhost;user=root;password=18062010;";
 
     // Conexão com o banco depois que ele for criado
 
@@ -24,7 +24,7 @@ public class Banco
     }
 
     private static string conexaoBanco =
-        "server=localhost;database=IMC;user=root;password=Senac2026;";
+        "server=localhost;database=IMC;user=root;password=18062010;";
 
     public static void CriarTabelaPessoa()
     {
@@ -35,10 +35,10 @@ public class Banco
         string sql = @"
             CREATE TABLE IF NOT EXISTS Pessoa
             (
-                id INT AUTO_INCREMENT PRIMARY KEY,
-                nome VARCHAR(100) NOT NULL,
-                peso DECIMAL NOT NULL,
-                altura DECIMAL NOT NULL
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            nome VARCHAR(100) NOT NULL,
+            peso DECIMAL(5,2) NOT NULL,
+            altura DECIMAL(3,2) NOT NULL
             );
         ";
 

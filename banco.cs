@@ -4,7 +4,7 @@ public class Banco
 {
     // Conexão com o servidor MySQL
     private static string conexaoServidor =
-        "server=localhost;user=root;password=18062010;";
+        "server=localhost;user=root;password=Senac2026;";
 
     // Conexão com o banco depois que ele for criado
 

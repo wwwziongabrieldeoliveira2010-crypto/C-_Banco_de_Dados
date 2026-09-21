@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 public class Imc
 {
     public static string conexaoBanco =
-        "server=localhost;database=IMC;user=root;password=18062010;";
+        "server=localhost;database=IMC;user=root;password=Senac2026;";
 
     private string? nome;
     private decimal peso;

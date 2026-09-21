@@ -20,7 +20,7 @@ demonstração : private static string conexaoServidor =
     "server=localhost;user=root;password=Senac2026;";
 
 private static string conexaoBanco =
-    "server=localhost;database=ec;user=root;password=Senac2026;";
+    "server=localhost;database=IMC;user=root;password=Senac2026;";
 
 4-5 O que aparece nelas? 
 . Aparece o server=localhost que é o endereço do servidor 
@@ -29,4 +29,79 @@ private static string conexaoBanco =
 . e por ultimo o database=IMC nome do banco
 ----------------------------------------------------------------------------------------------------------
 
+4.2 Comandos SQL 
+A classe IMC ja vem com esses quatros comandos o 
+INSERT
+.string sql = @"INSERT INTO Pessoa (nome, peso, altura) VALUES (@nome, @peso, @altura);";
+using MySqlCommand cmd = new MySqlCommand(sql, conn);
+cmd.Parameters.AddWithValue("@nome", Nome);
+cmd.Parameters.AddWithValue("@peso", Peso);
+cmd.Parameters.AddWithValue("@altura", Altura);
+cmd.ExecuteNonQuery();
 
+O SELECT ( no caso aqui é o listarPessoas() e o BuscarPorId())
+string sql = "SELECT id, nome, peso, altura FROM Pessoa ORDER BY id;";
+using MySqlCommand cmd = new MySqlCommand(sql, conn);
+using MySqlDataReader reader = cmd.ExecuteReader();
+
+o UPDATE - AtualizarNoBanco()
+string sql = @"UPDATE Pessoa SET nome = @nome, peso = @peso, altura = @altura WHERE id = @id;";
+cmd.ExecuteNonQuery();
+
+E por ultimo o DELETE - DeletarDoBanco()
+string sql = "DELETE FROM Pessoa WHERE id = @id;";
+cmd.ExecuteNonQuery();
+
+a e o INSERT,DELETE e o UPDATE usam o ExecuteNonQuery 
+(ele serve para nao retornar os dados, só a quantidade de linhas afetadas)
+E o SELECT usa o ExecuteReader() (ele funciona para retornar os dados pra leitura)
+----------------------------------------------------------------------------------------------------------------------
+
+4.3 Consulta de Dados
+
+Como o C# recebe os dados de um SELECT?
+Através do MySqlDataReader, que percorre os resultados linha por linha, sem carregar tudo de uma vez na memória.
+
+Como percorrer os resultados?
+Com while (reader.Read()) e cada chamada avança pra próxima linha, e para quando não há mais registros.
+É assim que o ListarPessoas()funciona:
+
+csharp
+while (reader.Read())
+    pessoas.Add(CriarDoReader(reader));
+
+Como transformar os dados em objetos da classe?
+O projeto faz isso no método CriarDoReader, que monta um objeto Imc direto com os valores lidos do banco:
+
+csharp
+private static Imc CriarDoReader(MySqlDataReader reader)
+{
+    return new Imc
+    {
+        Id = reader.GetInt32("id"),
+        nome = reader.GetString("nome"),
+        peso = reader.GetDecimal("peso"),
+        altura = reader.GetDecimal("altura")
+    };
+}
+
+Aqui os campos são preenchidos diretamente (sem passar pelos setters com validação),
+porque os dados que já estão salvos no banco são considerados válidos.
+-------------------------------------------------------------------------------------------------------------------
+
+4.4 Segurança
+
+O que são parâmetros em comandos SQL e por que são importantes?
+São os @nome, @peso, @altura, @id usados em todos os comandos do Imc.cs, 
+preenchidos via cmd.Parameters.AddWithValue(...). O valor é enviado separado do texto do comando SQL,
+então o banco nunca interpreta o que o usuário digitou como parte do comando — só como dado puro.
+O que pode acontecer ao montar SQL concatenando texto digitado pelo usuário?
+Abre brecha para SQL Injection. Se o projeto tivesse feito, por exemplo:
+
+csharp
+// PERIGOSO — não é assim que o projeto faz
+string sql = "INSERT INTO Pessoa (nome) VALUES ('" + Nome + "')"
+
+alguém poderia digitar no campo nome algo como '); DROP TABLE Pessoa; -- e apagar a tabela inteira do banco, 
+ou manipular outros comandos SQL sem autorização. 
+Como o projeto usa parâmetros (AddWithValue) em todos os comandos,esse risco é evitado.

@@ -20,7 +20,7 @@ demonstração : private static string conexaoServidor =
     "server=localhost;user=root;password=Senac2026;";
 
 private static string conexaoBanco =
-    "server=localhost;database=ec;user=root;password=Senac2026;";
+    "server=localhost;database=IMC;user=root;password=Senac2026;";
 
 4-5 O que aparece nelas? 
 . Aparece o server=localhost que é o endereço do servidor 

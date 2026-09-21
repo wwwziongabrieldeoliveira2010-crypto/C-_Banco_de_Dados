@@ -4,7 +4,7 @@ depois conecta especificamente no banco IMC ja criado, pra poder criar tabelas e
 
 
 4-2| Bilioteca Usada? 
-. A gente usa o MySQL.Data.MySQLClient que da pra observar la no using na primeira linha do codigo 
+. A gente usou o MySQL.Data.MySQLClient que da pra observar la no using na primeira linha do codigo 
 
 
 4-3| Como foi adicionada? 
@@ -12,8 +12,9 @@ depois conecta especificamente no banco IMC ja criado, pra poder criar tabelas e
 que a gente usa um dotnet add package MySQL.Data, o que permite usar as classes MySQLConnection e o MySQLCommand
 
 
+
 4-4| O que é a string de conexão no seu codigo? 
-. a gente usou a variavel string em duas ocasioes la qaundo a gente faz a conexao com o servidor 
+. a gente usou a variavel string em duas ocasioes la quaundo a gente faz a conexao com o servidor 
 e quando a gente faz conexão com o banco 
 demonstração : private static string conexaoServidor =
     "server=localhost;user=root;password=Senac2026;";

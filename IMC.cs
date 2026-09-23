@@ -287,4 +287,8 @@ public class Imc
         Console.WriteLine($"Classificação: {ClassificacaoIMC()}");
         Console.WriteLine("=====================");
     }
+    public override string ToString()
+{
+    return $"Id: {Id} | Nome: {Nome} | Peso: {Peso:F2} kg | Altura: {Altura:F2} m";
+}
 }

@@ -164,27 +164,32 @@ public class Imc
     // ===================== BANCO DE DADOS =====================
 
     // CREATE
-    public void SalvarNoBanco()
-    {
-        string sql = @"
-            INSERT INTO Pessoa (nome, peso, altura)
-            VALUES (@nome, @peso, @altura);
-        ";
+    
+public void SalvarNoBanco()
+{
+    string sql = @"
+        INSERT INTO Pessoa (nome, peso, altura)
+        VALUES (@nome, @peso, @altura);
 
-        using MySqlConnection conn = new MySqlConnection(conexaoBanco);
-        conn.Open();
+        SELECT LAST_INSERT_ID();";
 
-        using MySqlCommand cmd = new MySqlCommand(sql, conn);
-        cmd.Parameters.AddWithValue("@nome", Nome);
-        cmd.Parameters.AddWithValue("@peso", Peso);
-        cmd.Parameters.AddWithValue("@altura", Altura);
+    using MySqlConnection conn =
+        new MySqlConnection(conexaoBanco);
 
-        cmd.ExecuteNonQuery();
+    conn.Open();
 
-        Id = (int)cmd.LastInsertedId;
+    using MySqlCommand cmd = new MySqlCommand(sql, conn);
 
-        Console.WriteLine($"Pessoa cadastrada no banco de dados! (ID: {Id})");
-    }
+    cmd.Parameters.AddWithValue("@nome", Nome);
+    cmd.Parameters.AddWithValue("@peso", Peso);
+    cmd.Parameters.AddWithValue("@altura", Altura);
+
+    Id = Convert.ToInt32(cmd.ExecuteScalar());
+
+    Console.WriteLine(
+        $"Pessoa cadastrada com sucesso! ID: {Id}");
+}
+
 
     // READ (todos)
     public static List<Imc> ListarPessoas()

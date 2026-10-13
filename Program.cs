@@ -1,7 +1,9 @@
-﻿using MySql.Data.MySqlClient;
+
+using MySql.Data.MySqlClient;
 
 Banco.CriarBanco();
 Banco.CriarTabelaPessoa();
+
 while (true)
 {
     Console.WriteLine();
@@ -10,6 +12,7 @@ while (true)
     Console.WriteLine("2 - Listar pessoas");
     Console.WriteLine("3 - Atualizar pessoa");
     Console.WriteLine("4 - Deletar pessoa");
+    Console.WriteLine("5 - Buscar pessoa pelo ID");
     Console.WriteLine("0 - Sair");
     Console.WriteLine("==========================");
     Console.Write("Escolha uma opção: ");
@@ -23,18 +26,27 @@ while (true)
             case "1":
                 Cadastrar();
                 break;
+
             case "2":
                 Listar();
                 break;
+
             case "3":
                 Atualizar();
                 break;
+
             case "4":
                 Deletar();
                 break;
+
+            case "5":
+                Buscar();
+                break;
+
             case "0":
                 Console.WriteLine("Saindo...");
                 return;
+
             default:
                 Console.WriteLine("Opção inválida!");
                 break;
@@ -44,13 +56,17 @@ while (true)
     {
         Console.WriteLine($"Erro no banco de dados: {ex.Message}");
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Erro: {ex.Message}");
+    }
 }
 
 static void Cadastrar()
 {
     Imc pessoa = Imc.CadastrarPessoa();
-    pessoa.MostrarResultado();
     pessoa.SalvarNoBanco();
+    pessoa.MostrarResultado();
 }
 
 static void Listar()
@@ -64,15 +80,32 @@ static void Listar()
     }
 
     Console.WriteLine();
-    Console.WriteLine($"{"ID",-5}{"Nome",-20}{"Peso",8}{"Altura",9}{"IMC",8}  Classificação");
-    Console.WriteLine(new string('-', 70));
+    Console.WriteLine(
+        $"{"ID",-5}{"Nome",-20}{"Peso",8}{"Altura",9}{"IMC",8}  Classificação");
+
+    Console.WriteLine(new string('-', 75));
 
     foreach (Imc p in pessoas)
     {
         Console.WriteLine(
-            $"{p.Id,-5}{p.Nome,-20}{p.Peso,8:F2}{p.Altura,9:F2}{p.CalcularIMC(),8:F2}  {p.ClassificacaoIMC()}"
-        );
+            $"{p.Id,-5}{p.Nome,-20}{p.Peso,8:F2}{p.Altura,9:F2}" +
+            $"{p.CalcularIMC(),8:F2}  {p.ClassificacaoIMC()}");
     }
+}
+
+static void Buscar()
+{
+    int id = LerId("Digite o ID da pessoa: ");
+
+    Imc? pessoa = Imc.BuscarPorId(id);
+
+    if (pessoa == null)
+    {
+        Console.WriteLine("Pessoa não encontrada!");
+        return;
+    }
+
+    pessoa.MostrarResultado();
 }
 
 static void Atualizar()
@@ -114,7 +147,10 @@ static void Deletar()
         return;
     }
 
-    Console.Write($"Tem certeza que deseja deletar {pessoa.Nome} (ID {pessoa.Id})? (s/n): ");
+    Console.Write(
+        $"Tem certeza que deseja deletar {pessoa.Nome} " +
+        $"(ID {pessoa.Id})? (s/n): ");
+
     string? confirmacao = Console.ReadLine();
 
     if (confirmacao?.Trim().ToLower() != "s")
@@ -138,6 +174,7 @@ static int LerId(string mensagem)
         if (int.TryParse(Console.ReadLine(), out int id) && id > 0)
             return id;
 
-        Console.WriteLine("ID inválido! Digite um número inteiro maior que zero.");
+        Console.WriteLine(
+            "ID inválido! Digite um número inteiro maior que zero.");
     }
 }

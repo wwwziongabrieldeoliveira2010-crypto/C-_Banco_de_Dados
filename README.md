@@ -56,7 +56,7 @@ dotnet restore
 ## Como configurar o banco
 
 1. Certifique-se de que o MySQL está rodando.
-2. Execute o script `tabela_pessoa.sql` no MySQL (pelo MySQL Workbench, pelo terminal ou outro cliente). Ele cria o banco e a tabela:
+2. Execute o script `banco.sql` no MySQL (pelo MySQL Workbench, pelo terminal ou outro cliente). Ele cria o banco e a tabela:
 
 ```sql
 CREATE DATABASE IF NOT EXISTS IMC;
@@ -106,7 +106,7 @@ O menu será exibido no terminal:
 |---------------------|------------------------------------------------------------------------|
 | `Program.cs`        | Menu interativo e chamadas das operações                               |
 | `Imc.cs`            | Classe com validações, cálculo do IMC e acesso ao banco (CRUD)         |
-| `tabela_pessoa.sql` | Script para criar o banco e a tabela                                   |
+| `banco.sql` | Script para criar o banco e a tabela                                   |
 
 ## Como funciona a conexão com o banco
 

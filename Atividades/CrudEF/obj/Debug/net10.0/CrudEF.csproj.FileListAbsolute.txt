@@ -1,0 +1,15 @@
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\bin\Debug\net10.0\CrudEF.exe
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\bin\Debug\net10.0\CrudEF.deps.json
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\bin\Debug\net10.0\CrudEF.runtimeconfig.json
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\bin\Debug\net10.0\CrudEF.dll
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\bin\Debug\net10.0\CrudEF.pdb
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.AssemblyInfoInputs.cache
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.AssemblyInfo.cs
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.csproj.CoreCompileInputs.cache
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.sourcelink.json
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.dll
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\refint\CrudEF.dll
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.pdb
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\CrudEF.genruntimeconfig.cache
+C:\Users\zion62291586\Documents\GitHub\C-_Banco_de_Dados\Atividades\CrudEF\obj\Debug\net10.0\ref\CrudEF.dll

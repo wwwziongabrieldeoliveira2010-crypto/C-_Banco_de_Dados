@@ -292,3 +292,5 @@ public class Imc
     return $"Id: {Id} | Nome: {Nome} | Peso: {Peso:F2} kg | Altura: {Altura:F2} m";
 }
 }
+
+
